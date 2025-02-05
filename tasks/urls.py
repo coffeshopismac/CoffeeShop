@@ -7,6 +7,6 @@ router = routers.DefaultRouter()
 router.register(r'tasks', views.TaskView, 'tasks')
 
 urlpatterns = [
-    path("api/v1/", include(router.urls)),  # Agregada la coma al final de esta línea
-    path("docs/", include_docs_urls(title="Tasks API")),  # Comillas corregidas
+    path("", include(router.urls)),  # Cambia esto a "" para que no repita "api/v1/"
+    path("docs/", include_docs_urls(title="Tasks API")),
 ]

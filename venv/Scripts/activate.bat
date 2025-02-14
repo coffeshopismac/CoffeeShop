@@ -8,7 +8,11 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
+<<<<<<< HEAD
 set "VIRTUAL_ENV=C:\Users\1751286905.ALUMNOS\Desktop\djang-crud-react\venv"
+=======
+set "VIRTUAL_ENV=C:\Users\lr191\Downloads\djang-crud-react\venv"
+>>>>>>> 60be69cd176615777ddea076284d0e87bb475cd0
 
 if not defined PROMPT set PROMPT=$P$G
 

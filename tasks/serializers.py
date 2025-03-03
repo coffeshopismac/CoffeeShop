@@ -1,10 +1,15 @@
 from rest_framework import serializers
+<<<<<<< HEAD
 from .models import Task, Cliente, Categoria, Producto, Empleado, Pedido, DetallePedido, Inventario, Venta
+=======
+from .models import Task
+>>>>>>> a1208405d428e12e418b775e30138426a17d67f5
 
 class TaskSerializer(serializers.ModelSerializer):
     class Meta:
         model = Task
         #fields = ('id', 'title', 'description', 'done')
+<<<<<<< HEAD
         fields = '__all__'
         
 class ClienteSerializer(serializers.ModelSerializer):
@@ -59,3 +64,6 @@ class VentaSerializer(serializers.ModelSerializer):
         model = Venta
         fields = '__all__'        
 
+=======
+        fields = '__all__'
+>>>>>>> a1208405d428e12e418b775e30138426a17d67f5

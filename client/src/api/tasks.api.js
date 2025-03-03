@@ -10,6 +10,7 @@ const tasksApi = axios.create({
   baseURL: `${URL}/api/v1`,  // Cambiado a /api/v1
 });
 
+<<<<<<< HEAD
 // ApiService actualizado para utilizar `tasksApi`
 const ApiService = {
   getClientes: () => tasksApi.get(`/clientes/`),
@@ -23,11 +24,17 @@ const ApiService = {
 };
 
 export default ApiService;
+=======
+>>>>>>> a1208405d428e12e418b775e30138426a17d67f5
 export const getAllTasks = () => tasksApi.get("/tasks/");  // Cambiado a /tasks/
 export const getTask = (id) => tasksApi.get(`/tasks/${id}/`);  // Cambiado a /tasks/${id}/
 export const createTask = (task) => tasksApi.post("/tasks/", task);  // Cambiado a /tasks/
 export const updateTask = (id, task) => tasksApi.put(`/tasks/${id}/`, task);  // Cambiado a /tasks/${id}/
+<<<<<<< HEAD
 export const deleteTask = (id) => tasksApi.delete(`/tasks/${id}/`);  // Cambiado a /tasks/${id}/
 export const getClientes = () => tasksApi.get("/clientes/");  // Corregido
 export const createCliente = (clienteData) => tasksApi.post("/clientes/", clienteData);
 
+=======
+export const deleteTask = (id) => tasksApi.delete(`/tasks/${id}/`);  // Cambiado a /tasks/${id}/
+>>>>>>> a1208405d428e12e418b775e30138426a17d67f5

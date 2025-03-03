@@ -1,4 +1,5 @@
 from django.contrib import admin
+<<<<<<< HEAD
 from django.contrib.admin import AdminSite
 from django.http import HttpResponse
 from django.urls import path
@@ -31,3 +32,7 @@ admin.site.register(Empleado)
 admin.site.register(Inventario)
 admin.site.register(DetallePedido)
 admin.site.register(Venta)
+=======
+
+# Register your models here.
+>>>>>>> a1208405d428e12e418b775e30138426a17d67f5

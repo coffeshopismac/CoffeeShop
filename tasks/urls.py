@@ -2,6 +2,7 @@ from django.urls import path, include
 from rest_framework.documentation import include_docs_urls
 from rest_framework import routers
 from tasks import views
+<<<<<<< HEAD
 from .views import (
     ClienteViewSet, CategoriaViewSet, ProductoViewSet, EmpleadoViewSet,
     PedidoViewSet, DetallePedidoViewSet, InventarioViewSet, VentaViewSet,
@@ -28,3 +29,13 @@ urlpatterns = [
     path('info_empresa/', info_empresa, name='info_empresa'),  # Página de información de la empresa
     
 ]
+=======
+
+router = routers.DefaultRouter()
+router.register(r'tasks', views.TaskView, 'tasks')
+
+urlpatterns = [
+    path("", include(router.urls)),  # Cambia esto a "" para que no repita "api/v1/"
+    path("docs/", include_docs_urls(title="Tasks API")),
+]
+>>>>>>> a1208405d428e12e418b775e30138426a17d67f5

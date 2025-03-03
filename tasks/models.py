@@ -7,6 +7,7 @@ class Task(models.Model):
     done = models.BooleanField(default=False)
 
     def __str__(self):
+<<<<<<< HEAD
         return self.title
     
 # Modelo Cliente
@@ -102,3 +103,6 @@ class Venta(models.Model):
 
     def __str__(self):
         return f"Venta {self.venta_id}"
+=======
+        return self.title
+>>>>>>> a1208405d428e12e418b775e30138426a17d67f5

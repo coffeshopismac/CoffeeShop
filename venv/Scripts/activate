@@ -40,10 +40,24 @@ deactivate nondestructive
 if [ "${OSTYPE:-}" = "cygwin" ] || [ "${OSTYPE:-}" = "msys" ] ; then
     # transform D:\path\to\venv to /d/path/to/venv on MSYS
     # and to /cygdrive/d/path/to/venv on Cygwin
+<<<<<<< HEAD
     export VIRTUAL_ENV=$(cygpath 'C:\Users\agsr5\Desktop\djang-crud-react\venv')
 else
     # use the path as-is
     export VIRTUAL_ENV='C:\Users\agsr5\Desktop\djang-crud-react\venv'
+=======
+<<<<<<< HEAD
+    export VIRTUAL_ENV=$(cygpath 'C:\Users\1751286905.ALUMNOS\Desktop\djang-crud-react\venv')
+else
+    # use the path as-is
+    export VIRTUAL_ENV='C:\Users\1751286905.ALUMNOS\Desktop\djang-crud-react\venv'
+=======
+    export VIRTUAL_ENV=$(cygpath 'C:\Users\lr191\Downloads\djang-crud-react\venv')
+else
+    # use the path as-is
+    export VIRTUAL_ENV='C:\Users\lr191\Downloads\djang-crud-react\venv'
+>>>>>>> 60be69cd176615777ddea076284d0e87bb475cd0
+>>>>>>> a1208405d428e12e418b775e30138426a17d67f5
 fi
 
 _OLD_VIRTUAL_PATH="$PATH"

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from django.shortcuts import render
 from rest_framework import viewsets
 from .serializers import (
@@ -46,3 +47,13 @@ class InventarioViewSet(viewsets.ModelViewSet):
 class VentaViewSet(viewsets.ModelViewSet):
     queryset = Venta.objects.all()
     serializer_class = VentaSerializer
+=======
+from rest_framework import viewsets
+from .serializers import TaskSerializer
+from .models import Task
+# Create your views here.
+
+class TaskView(viewsets.ModelViewSet):
+    serializer_class = TaskSerializer
+    queryset = Task.objects.all()
+>>>>>>> a1208405d428e12e418b775e30138426a17d67f5

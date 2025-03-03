@@ -1,0 +1,69 @@
+{% extends "admin/base_site.html" %}
+
+{% block content %}
+<div class="login-wrapper">
+    <div class="login-container">
+        <h2>Iniciar Sesión</h2>
+        <form method="post" novalidate>
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="button">Iniciar Sesión</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_styles %}
+<style>
+    body {
+        background-color: #f0f4f8; /* Color de fondo claro */
+        margin: 0;
+        font-family: Arial, sans-serif; /* Fuente general */
+    }
+
+    .login-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Altura completa de la ventana */
+    }
+
+    .login-container {
+        background-color: #fff; /* Fondo blanco */
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        width: 350px; /* Ancho del contenedor */
+        text-align: center; /* Centrado del texto */
+    }
+
+    h2 {
+        margin-bottom: 20px;
+        color: #333; /* Color del texto */
+    }
+
+    .button {
+        background-color: #007bff; /* Color del botón */
+        color: white; /* Color del texto del botón */
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        width: 100%; /* Botón ocupa todo el ancho */
+    }
+
+    .button:hover {
+        background-color: #0056b3; /* Color del botón al pasar el mouse */
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        width: 100%; /* Ancho completo */
+        padding: 10px;
+        margin: 10px 0; /* Espaciado entre campos */
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+</style>
+{% endblock %}

@@ -1,0 +1,45 @@
+/* django_crud_api/static/css/admin_custom.css */
+
+/* Cambia el color de fondo del panel de administración */
+body {
+    background-color: #f0f0f0;
+}
+
+/* Estilo para los encabezados */
+h1, h2, h3 {
+    color: #4A90E2; /* Color azul */
+}
+
+/* Botones personalizados */
+.button {
+    background-color: #6A5ACD; /* Color de botón */
+    color: white;
+    border-radius: 0.3rem;
+}
+
+/* Hover para botones */
+.button:hover {
+    background-color: #FF9F00; /* Color de hover */
+}
+
+
+
+/* Estilos para el contenedor de login */
+.login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para los campos de entrada */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
